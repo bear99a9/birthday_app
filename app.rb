@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_relative "./lib/user.rb"
 
 class Birthday < Sinatra::Base
   enable :sessions
@@ -7,17 +8,8 @@ class Birthday < Sinatra::Base
     erb :index
   end
 
-  post ('/user_info') do
-    session[:name] = params[:name]
-    session[:day] = params[:day]
-    session[:month] = params[:month]
-    redirect '/birthday'
-  end
-
-  get('/birthday') do
-    @name = session[:name]
-    @day = session[:day]
-    @month = session[:month]
+  post('/birthday') do
+    @user = User.new(params[:name], params[:day], params[:month])
     erb :birthday
   end
 end
