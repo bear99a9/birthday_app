@@ -13,10 +13,36 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/seanedwards/Makers/january/web_apps/birthday_app/spec/features/collects_user_info_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1611656321
+    "timestamp": 1611663289
   }
 }
