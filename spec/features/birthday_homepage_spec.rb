@@ -1,7 +1,7 @@
 feature 'Homepage welcomes users' do
   scenario 'it says hello when you visit the page' do
     visit('/')
-    expect(page).to have_content("Hello There")
+    expect(page).to have_content("Hello there")
   end
 
   scenario 'it asks for your name' do
@@ -11,6 +11,6 @@ feature 'Homepage welcomes users' do
 
   scenario 'it asks for your birthday' do
     visit ('/')
-    expect(page).to have_content("When's your birthday?")
+    expect(page).to have_content("When is your birthday?")
   end
 end
